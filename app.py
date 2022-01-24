@@ -9,4 +9,42 @@
 - Display the message, who won the match.
 """
 
-import tkinter
+from functools import partial
+from tkinter import *
+
+
+class TwoPlayer:
+   def __init__(self, game_board: Tk) -> None:
+      game_board.destroy()
+
+
+class SinglePlayer:
+   def __init__(self, game_board: Tk) -> None:
+      game_board.destroy()
+
+
+class Play:
+   def __init__(self) -> None: 
+      self.menu = Tk()
+      self.menu.geometry("300x300")
+      self.menu.title('Tic Tac Toe Game')
+
+      self.btn_sp = Button(self.menu, text='Single Player', width='200')
+
+      self.btn_twop = Button(self.menu, text='Two Players', width='200')
+
+      self.btn_exit = Button(self.menu, text='Exit', command=self.menu.quit,
+       width='200')
+
+      self.btn_sp.pack(side='top')
+      self.btn_twop.pack(side='top')
+      self.btn_exit.pack(side='top')
+
+
+   def start(self):
+      self.menu.mainloop()
+
+
+if __name__ == "__main__":
+   win = Play()
+   win.start()
