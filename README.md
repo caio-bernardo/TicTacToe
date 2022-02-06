@@ -17,7 +17,7 @@ Um jogo de video game do clássico Jogo da Velha para desktop.
 - [x] Resultado do jogo de forma personalizada
 
 ## Versão
-A versão atual é a [1.0.1](), saiba mais em [CHANGELOG](CHANGELOG.md)
+A versão atual é a 1.0.1, saiba mais em [CHANGELOG](CHANGELOG.md)
 
 ## Pré-requisitos
 * Python instalado
