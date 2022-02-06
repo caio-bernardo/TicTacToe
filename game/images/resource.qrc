@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="resources">
+    <file>cross_symbol.png</file>
+    <file>Jogo_da_velha_-_tic_tac_toe.png</file>
+    <file>tic_tac_toe_icon.png</file>
+    <file>tie_game.png</file>
+    <file>circle_symbol.png</file>
+  </qresource>
+</RCC>
