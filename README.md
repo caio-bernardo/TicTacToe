@@ -23,7 +23,7 @@ A versão atual é a 1.0.1, saiba mais em [CHANGELOG](CHANGELOG.md)
 * Python instalado
 * PyQt5 instalado
 * Uma IDE para rodar o código, ex.: Visual Studio Code
->> Nota: Isto é apenas um *placeholder*, a versão final contará com um arquivo executavél.
+> Nota: Isto é apenas um *placeholder*, a versão final contará com um arquivo executavél.
 
 ## Instruções de uso
 * Rode o arquivo [__init__](game/__init__.py) da pasta game
