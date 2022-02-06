@@ -4,15 +4,14 @@ from interface.uic.game_gui import Ui_MainWindow
 
 
 class Window(QMainWindow, Ui_MainWindow):
-    AUTHOR = 'Caio Bernardo'
-    VERSION = 'alpha version'
+    VERSION = '0.1.0'
 
     def __init__(self, parent=None):
         super().__init__(parent)
         super().setupUi(self)
 
         # Bottom Label
-        self.bottom_label.setText(f'By {self.AUTHOR}    {self.VERSION}')
+        self.bottom_label.setText(f'v-{self.VERSION}')
 
         # Start Page - Default
         self.stackedWidget.setCurrentWidget(self.start_page)
