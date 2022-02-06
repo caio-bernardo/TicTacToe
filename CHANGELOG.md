@@ -1,6 +1,5 @@
 # CHANGELOG
 Toda e qualquer alteração no projeto será documentada neste arquivo.
-===
 ## [NãoPublicado]
 ### [Adicionado]
 - [ ] Refatoração do arquivo main
