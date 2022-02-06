@@ -3,10 +3,10 @@ Toda e qualquer alteração no projeto será documentada neste arquivo.
 ===
 ## [NãoPublicado]
 ### [Adicionado]
-[ ] Refatoração do arquivo main
-[ ] Criação de testes
-[ ] Modo Single Player
-[ ] Arquivo .exe para download do jogo
+- [ ] Refatoração do arquivo main
+- [ ] Criação de testes
+- [ ] Modo Single Player
+- [ ] Arquivo .exe para download do jogo
 
 ## 0.1.0 - 2022/02/06
 ### [Adicionado]
