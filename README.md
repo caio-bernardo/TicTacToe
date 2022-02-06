@@ -11,7 +11,7 @@ Um jogo de video game do clássico Jogo da Velha para desktop.
  O jogo conta com dois modos, dois jogadores, *TwoPlayer*, ou jogador contra máquina, *Single Player*.
 > Nota: o modo Single Player ainda está em desenvolvimento.
 
-# Features
+## Features
 - [ ] Modo de jogo Single Player
 - [x] Modo de jogo Two Player
 - [x] Resultado do jogo de forma personalizada
@@ -26,5 +26,5 @@ A versão atual é a 1.0.1, saiba mais em [CHANGELOG](CHANGELOG.md)
 > Nota: Isto é apenas um *placeholder*, a versão final contará com um arquivo executavél.
 
 ## Instruções de uso
-* Rode o arquivo [__init__](game/__init__.py) da pasta game
+* Rode o arquivo [init](game/__init__.py) da pasta game
 > Nota: Isto é apenas um *placeholder*, a versão final contará com um arquivo executavél.
