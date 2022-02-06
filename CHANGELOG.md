@@ -8,7 +8,7 @@ Toda e qualquer alteração no projeto será documentada neste arquivo.
 - [ ] Modo Single Player
 - [ ] Arquivo .exe para download do jogo
 
-## 0.1.0 - 2022/02/06
+## [0.1.0] - 2022/02/06
 ### [Adicionado]
 * O pacote [game](game), contém todos os arquivos do projeto.
 * Pasta [images](game/images), contém todas as imagens e o arquivo [resource.qrc](game/images/resource.qrc), que permite o acesso as imagens.
@@ -26,3 +26,5 @@ Toda e qualquer alteração no projeto será documentada neste arquivo.
 
 ### [Removido]
 - Arquivo app.py
+
+[0.1.0]: https://github.com/caio-bernardo/TicTacToe/compare/main...game-v.2.0
