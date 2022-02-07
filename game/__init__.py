@@ -2,7 +2,7 @@
 Run this to test the application
 
 """
-from src.main import Window
+from src.window import Window
 import sys
 from PyQt5.QtWidgets import QApplication
 
