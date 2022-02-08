@@ -1,3 +1,4 @@
+from typing import Union
 
 
 class Board:
@@ -31,36 +32,27 @@ class Player:
         return self._nowply
 
     @nowply.setter
-    def nowply(self, value):
+    def nowply(self, value):  # TODO remove this setter (swap does the job now)
         """ value it's a flag for the swap """
         if value != '':
             self._nowply, self._oldply = self._oldply, self._nowply
+    
+    def swap(self):
+        self.nowply = 'swap'
     
     def reset(self):
         self._nowply = {'name': 'Player 1', 'sign': 'X'}
         self._oldply = {'name': 'Player 2', 'sign': 'O'}
 
 
+class Button:
+    pass
+
+
 class Results():
     def __init__(self):
-        self._mensage = 'Default'
-        self._image_resource = 'None'
-
-    @property
-    def mensage(self):
-        return self._mensage
-    
-    @mensage.setter
-    def mensage(self, value):
-        self._mensage = value
-    
-    @property
-    def image_resource(self):
-        return self._image_resource
-    
-    @image_resource.setter
-    def image_resource(self, value):
-        self._image_resource = value
+        self.mensage = 'Default'
+        self.image_resource = 'None'
 
     def ply1_wins(self):
         self.mensage = 'Player 1!'
@@ -74,13 +66,41 @@ class Results():
         self.mensage = 'Tie Game!'
         self.image_resource = ':/resources/tie_game.png'
 
+    def return_results(self) -> tuple:
+        return (self.mensage, self.image_resource)
 
-def check_4_winner(self, b, s) -> bool:
-    return ((b[0] == b[1] == b[2] == s) or
-            (b[3] == b[4] == b[5] == s) or
-            (b[6] == b[7] == b[8] == s) or
-            (b[0] == b[3] == b[6] == s) or
-            (b[1] == b[4] == b[7] == s) or
-            (b[2] == b[5] == b[8] == s) or
-            (b[0] == b[4] == b[8] == s) or
-            (b[2] == b[4] == b[6] == s))
+
+class GameState:
+    def __init__(self, player: Player, board: Board):
+        self.results = Results()
+        self.options = {'Player 1': self.results.ply1_wins,
+         'Player 2': self.results.ply2_wins, 'Tie Game': self.results.no_wins}
+        self.player = player
+        self.board = board
+
+    def check_state(self) -> Union[tuple, None]:
+        winner = self.__check_4_winner()
+        if winner is True:
+           player_name: str = self.player['name'] 
+           self.options[player_name]()
+           return self.results.return_results() 
+        
+        elif self.board.is_board_full():
+            self.options['Tie Game']()
+            return self.results.return_results() 
+        
+        else:
+            return None
+
+    def __check_4_winner(self) -> bool:
+        s = self.player['sign']
+        b = self.board.board
+
+        return ((b[0] == b[1] == b[2] == s) or
+                (b[3] == b[4] == b[5] == s) or
+                (b[6] == b[7] == b[8] == s) or
+                (b[0] == b[3] == b[6] == s) or
+                (b[1] == b[4] == b[7] == s) or
+                (b[2] == b[5] == b[8] == s) or
+                (b[0] == b[4] == b[8] == s) or
+                (b[2] == b[4] == b[6] == s))

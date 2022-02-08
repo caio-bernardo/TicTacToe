@@ -17,7 +17,7 @@ Um jogo de video game do clássico Jogo da Velha para desktop.
 - [x] Resultado do jogo de forma personalizada
 
 ## Versão
-A versão atual é a [1.0.1](CHANGELOG.md/#010---20220206), saiba mais em [CHANGELOG](CHANGELOG.md)
+A versão atual é a [0.2.0](CHANGELOG.md/#020---20220208), saiba mais em [CHANGELOG](CHANGELOG.md)
 
 ## Pré-requisitos
 * Python instalado
@@ -26,5 +26,10 @@ A versão atual é a [1.0.1](CHANGELOG.md/#010---20220206), saiba mais em [CHANG
 > Nota: Isto é apenas um *placeholder*, a versão final contará com um arquivo executavél.
 
 ## Instruções de uso
-* Rode o arquivo [init](game/__init__.py) da pasta game
+* Importe a função dentro do arquivo [init](game/__init__.py) da pasta game.  
+~~~
+import game
+game.start()
+~~~
+  
 > Nota: Isto é apenas um *placeholder*, a versão final contará com um arquivo executavél.

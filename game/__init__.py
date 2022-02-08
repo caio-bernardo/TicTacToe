@@ -2,16 +2,13 @@
 Run this to test the application
 
 """
-from src.window import Window
+from .src import window
 import sys
 from PyQt5.QtWidgets import QApplication
 
 def start():
     qt = QApplication(sys.argv)
-    win = Window()
+    win = window.Window()
     win.show()
     qt.exec_()
 
-
-if __name__ == "__main__":
-    start()

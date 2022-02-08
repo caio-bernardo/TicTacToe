@@ -1,8 +1,9 @@
-from unittest import result
+
 from PyQt5 import QtGui
 from PyQt5.QtWidgets import QMainWindow
-from interface.uic.game_gui import Ui_MainWindow
-from src import tools
+from ..interface.uic.game_gui import Ui_MainWindow
+from . import tools
+
 
 class Window(QMainWindow, Ui_MainWindow):
     VERSION = '0.1.0'
@@ -53,6 +54,8 @@ class Window(QMainWindow, Ui_MainWindow):
         self.player = tools.Player()
         self.crrnt_ply_label.setText(self.player.nowply['name'])
 
+        self.game_state = tools.GameState(player=self.player.nowply, board=self.brd)
+
         self.stackedWidget.setCurrentWidget(self.board_page)
         
     def write_on_board(self, btn: Ui_MainWindow) -> None:
@@ -66,31 +69,21 @@ class Window(QMainWindow, Ui_MainWindow):
         else:
             return        
 
-        # Check winner
-        is_finished = self.check_result()
+        # Check if the game is finished
+        # TODO Fix GameState not updating player
+        self.game_state.player = self.player.nowply
+
+        final_result = self.game_state.check_state()
         
-        if is_finished is True:
-            self.result_label.setText(self.resul.mensage)
-            self.result_img_label.setPixmap(QtGui.QPixmap(self.resul.image_resource))
+        if not final_result is None:
+            msg, img = final_result
+            
+            self.result_label.setText(msg)
+            self.result_img_label.setPixmap(QtGui.QPixmap(img))
             self.stackedWidget.setCurrentWidget(self.result_page)
+            
             return
         
         # Change Player
-        self.player.nowply = 'swap'
+        self.player.swap()
         self.crrnt_ply_label.setText(self.player.nowply['name'])
-
-    def check_result(self) -> bool:
-        self.resul = tools.Results()
-        if tools.check_4_winner():
-            if self.player.nowply['name'] == 'Player 1':
-                self.resul.ply1_wins()
-            else:
-                self.resul.ply2_wins()
-
-            return True
-        
-        elif self.brd.is_board_full():
-            self.resul.no_wins()
-            return True
-        
-        return False

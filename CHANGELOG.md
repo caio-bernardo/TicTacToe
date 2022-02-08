@@ -1,11 +1,30 @@
 # CHANGELOG
 Toda e qualquer alteração no projeto será documentada neste arquivo.
 ## [NãoPublicado]
-### [Adicionado]
-- [ ] Refatoração do arquivo main
+### [EmBreve]
 - [ ] Criação de testes
 - [ ] Modo Single Player
 - [ ] Arquivo .exe para download do jogo
+- [ ] Melhoras na performace
+
+## [0.2.0] - 2022/02/08
+### [Adicionado]
+* Arquivo [tools](game/src/tools.py) contém funcionalidades da interface
+* Classes (Board, Player, GameSate, Results) adicionadas ao arquivo [tools](game/src/tools.py), essas classes excercem funcionalidades sobre o arquivo [window](game/src/window.py)
+* Função [start](game/__init__.py) inicia a jogo.
+
+### [Removido]
+* Arquivos __init__.py desnecessários nas pastas [interface](game/interface/) e [src](game/src/)
+
+### [Modificado]
+* Arquivo *src/main* renomeado para [window](game/src/window.py)
+* O arquivo [window](game/src/window.py) agora conta apenas com funções destinadas a aspectos visuais e a interface
+* Mudanças na forma de iniciar o jogo. Saiba mais em [README](README.md/#instru%C3%A7%C3%B5es-de-uso).
+
+### [Corrigido]
+* Problemas de importação de modulos
+* Um erro de digitação no arquivo [README](README.md), o número da versão estava "1.0.1".
+
 
 ## [0.1.0] - 2022/02/06
 ### [Adicionado]
@@ -25,5 +44,6 @@ Toda e qualquer alteração no projeto será documentada neste arquivo.
 
 ### [Removido]
 - Arquivo app.py
+
 
 [0.1.0]: https://github.com/caio-bernardo/TicTacToe/compare/main...game-v.2.0
