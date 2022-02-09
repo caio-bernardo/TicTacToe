@@ -7,6 +7,10 @@ Toda e qualquer alteração no projeto será documentada neste arquivo.
 - [ ] Arquivo .exe para download do jogo
 - [ ] Melhoras na performace
 
+## [0.2.1] - 2022/02/09
+### [Corrigido]
+* Mudanças no CHANGELOG, agora as versões redirecionam para comparação entre versões de forma correta.
+
 ## [0.2.0] - 2022/02/08
 ### [Adicionado]
 * Arquivo [tools](game/src/tools.py) contém funcionalidades da interface
@@ -45,5 +49,6 @@ Toda e qualquer alteração no projeto será documentada neste arquivo.
 ### [Removido]
 - Arquivo app.py
 
-
+[0.2.1]: https://github.com/caio-bernardo/TicTacToe/compare/v0.1.0...v0.2.0
+[0.2.0]: https://github.com/caio-bernardo/TicTacToe/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/caio-bernardo/TicTacToe/compare/main...game-v.2.0
