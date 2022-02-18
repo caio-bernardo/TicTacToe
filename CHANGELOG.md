@@ -3,9 +3,30 @@ Toda e qualquer alteração no projeto será documentada neste arquivo.
 ## [NãoPublicado]
 ### [EmBreve]
 - [ ] Criação de testes
-- [ ] Modo Single Player
 - [ ] Arquivo .exe para download do jogo
 - [ ] Melhoras na performace
+- [ ] Refatoração de código mal desenvolvido
+
+## [0.3.0] - 2022/02/18
+### [Adicionado]
+* Modo Single Player
+* Classe *ComputerMove*, que escolhe um local na grade e joga contra o usuário.
+* Novos métodos que definem o modo de jogo
+* Tupla com os botões da grade
+* Novo método *computer_move* que joga contra o jogador
+
+### [Removido]
+* *setter* da classe *Player* ( o método swap o substitui)
+* classe *Button*
+
+
+### [Modificado]
+* o método *check_4_winner* agora tem sua própria classe
+* O texto dos botões da grade são reiniciados por um loop.
+
+## [0.2.1] - 2022/02/09
+### [Corrigido]
+* Mudanças no CHANGELOG, agora as versões redirecionam para comparação entre versões de forma correta.
 
 ## [0.2.0] - 2022/02/08
 ### [Adicionado]
@@ -45,5 +66,8 @@ Toda e qualquer alteração no projeto será documentada neste arquivo.
 ### [Removido]
 - Arquivo app.py
 
-
+[EmBreve]: https://github.com/caio-bernardo/TicTacToe/compare/v0.3.0...HEAD
+[0.3.0]: https://github.com/caio-bernardo/TicTacToe/compare/v0.2.1...v.0.3.0
+[0.2.1]: https://github.com/caio-bernardo/TicTacToe/compare/v0.2.0...v0.2.1
+[0.2.0]: https://github.com/caio-bernardo/TicTacToe/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/caio-bernardo/TicTacToe/compare/main...game-v.2.0
