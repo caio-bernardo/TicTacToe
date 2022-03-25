@@ -6,6 +6,9 @@ Toda e qualquer alteração no projeto será documentada neste arquivo.
 - [ ] Arquivo .exe para download do jogo
 - [ ] Melhoras na performace
 - [ ] Refatoração de código mal desenvolvido
+
+## [1.0.0] - 2022/03/25
+###
  
 ## [1.0.0-rc1] - 2022/02/19
 ### [Adicionado]

@@ -1,5 +1,7 @@
 venv
 .vscode
 __pycache__
-run.py
 .qt_for_python
+build
+dist
+run.spec

@@ -11,4 +11,3 @@ def start():
     win = window.Window()
     win.show()
     qt.exec_()
-
