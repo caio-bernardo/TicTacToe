@@ -28,7 +28,7 @@ Um jogo de video game do clássico Jogo da Velha para desktop.
 * PyInstaller
 
 ## Uso
-* Baixe o instalador <a href="tictactoe-installer.exe" download>Clicando Aqui</a>
+* Baixe o instalador [clicando aqui](tictactoe-installer.exe) e em Download.
 * Prossiga até que o jogo seja instalado.  
 ![installer picture1](images/image8.png)
 ![installer picture2](images/image9.png)
