@@ -1,13 +1,13 @@
 # TicTacToe
-[![GitHub license](https://img.shields.io/github/license/caio-bernardo/TicTacToe)](https://github.com/caio-bernardo/TicTacToe/blob/main/LICENSE)
-![Status do Projeto](https://img.shields.io/badge/status-desenvolvimento-brightgreen)  
+[![GitHub license](https://img.shields.io/github/license/caio-bernardo/TicTacToe?style=for-the-badge)](https://github.com/caio-bernardo/TicTacToe/blob/main/LICENSE)
+![Status do Projeto](https://img.shields.io/badge/status-finalizado-brightgreen?style=for-the-badge) 
+[![GitHub stars](https://img.shields.io/github/stars/caio-bernardo/TicTacToe?style=for-the-badge)](https://github.com/caio-bernardo/TicTacToe/stargazers)  
 Um jogo de video game do clássico Jogo da Velha para desktop.
 
 ![main window](images/image1.png) 
 
-
 ## Indice
-[Sobre](#sobre) &#8226; [Features](#features) &#8226; [Tecnologias e Ferramentas usadas](#tecnologias-e-ferramentas-usadas) &#8226; [Versão](#vers%C3%A3o) &#8226; [Pré-requisitos](#pr%C3%A9-requisitos) &#8226; [Instruções de uso](#instru%C3%A7%C3%B5es-de-uso)
+[Sobre](#sobre) &#8226; [Recursos](#recursos) &#8226; [Tecnologias](#tecnologias) &#8226; [Uso](#uso) &#8226; [Acesso a código](#acesso-ao-código)
 
 ## Sobre
  O jogo conta com dois modos, dois jogadores, *TwoPlayer*, ou jogador contra máquina, *Single Player*.
@@ -17,7 +17,6 @@ Um jogo de video game do clássico Jogo da Velha para desktop.
 - [x] Modo de jogo Two Player.
 - [x] Resultado do jogo de forma personalizada.
 - [x] Instalador do jogo.
-
 
 ![board window](images/image3.png)
 ![result x window](images/image6.png)  
@@ -29,8 +28,11 @@ Um jogo de video game do clássico Jogo da Velha para desktop.
 * PyInstaller
 
 ## Uso
-* Baixe o instalador e prossiga até a confirmação da instalação, por fim acesse atráves da barra de pesquisa.
-
+* Baixe o instalador e prossiga até que o jogo seja instalado.
+![installer picture1](images/image8.png)
+![installer picture2](images/image9.png)
+![installer picture3](images/image10.png)
+* Por fim pesquise na sua barra de busca e abra o jogo.
 ![search picture](images/image2.png)
 
 ## Acesso ao código
